@@ -1,1 +1,57 @@
+-----------------------------------------------QueryContent--------------------------------
+
+====================================================== test session starts =======================================================
+platform darwin -- Python 3.11.8, pytest-8.3.4, pluggy-1.5.0
+rootdir: /Users/surendersardana/Documents/Surender/Projects/MCMC/mega-similarity/devBranch/limpopo-mega-similarity
+configfile: pyproject.toml
+plugins: anyio-4.7.0
+collected 2 items                                                                                                                
+
+testQueryContent.py ..                                                                                                     [100%]
+
+======================================================== warnings summary ========================================================
+tests/testQueryContent.py::test_query_content
+tests/testQueryContent.py::test_query_content_video_not_found
+  /Users/surendersardana/Documents/Surender/Projects/MCMC/mega-similarity/devBranch/limpopo-mega-similarity/.venv/lib/python3.11/site-packages/qdrant_client/qdrant_remote.py:130: UserWarning: Api key is used with an insecure connection.
+    warnings.warn("Api key is used with an insecure connection.")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================= 2 passed, 2 warnings in 5.26s ==================================================
+
+
+
+
+-----------------------------------------------QueryProfile--------------------------------
+====================================================== test session starts =======================================================
+platform darwin -- Python 3.11.8, pytest-8.3.4, pluggy-1.5.0
+rootdir: /Users/surendersardana/Documents/Surender/Projects/MCMC/mega-similarity/devBranch/limpopo-mega-similarity
+configfile: pyproject.toml
+plugins: anyio-4.7.0
+collected 2 items                                                                                                                
+
+testQueryProfile.py ..                                                                                                     [100%]
+
+======================================================== warnings summary ========================================================
+tests/testQueryProfile.py::test_query_profile
+tests/testQueryProfile.py::test_query_profile_user_not_found
+  /Users/surendersardana/Documents/Surender/Projects/MCMC/mega-similarity/devBranch/limpopo-mega-similarity/.venv/lib/python3.11/site-packages/qdrant_client/qdrant_remote.py:130: UserWarning: Api key is used with an insecure connection.
+    warnings.warn("Api key is used with an insecure connection.")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================= 2 passed, 2 warnings in 4.98s ==================================================
+
+
+
+
+-----------------------------------------------SaveCollection--------------------------------
+====================================================== test session starts =======================================================
+platform darwin -- Python 3.11.8, pytest-8.3.4, pluggy-1.5.0
+rootdir: /Users/surendersardana/Documents/Surender/Projects/MCMC/mega-similarity/devBranch/limpopo-mega-similarity
+configfile: pyproject.toml
+plugins: anyio-4.7.0
+collected 3 items                                                                                                                
+
+testSaveCollection.py ...                                                                                                  [100%]
+
+======================================================= 3 passed in 4.10s ========================================================
 
