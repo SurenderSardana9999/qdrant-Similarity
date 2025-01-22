@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ada-limpopo-dev
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ada-limpopo-dev
+  template:
+    metadata:
+      labels:
+        app: ada-limpopo-dev
+    spec:
+      containers:
+      - name: ada-limpopo-dev
+        image: userdatadevacr.azurecr.io/ada-limpopo-dev-limpopo-mega-similarity:#{Build.BuildId}#
+        ports:
+          - containerPort: 8001
+
+# service type loadbalancer
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: ada-limpopo-dev
+spec:
+  selector:
+    app: ada-limpopo-dev # Change the selector to a non-existent pod label
+  ports:
+    - protocol: TCP
+      port: 8001
+      targetPort: 8001
+  type: LoadBalancer
